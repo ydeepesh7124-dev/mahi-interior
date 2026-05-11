@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-secondary: #f5f5f0;
+  --color-accent-gold: #c5a059;
+  --color-walnut: #5c4033;
+  --color-beige: #e8e4d9;
+  --color-white: #ffffff;
+  
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+}
+
+@layer base {
+  :root {
+    --background: #f5f5f0;
+    --foreground: #1a1a1a;
+  }
+
+  .dark {
+    --background: #111111;
+    --foreground: #f5f5f0;
+  }
+
+  body {
+    @apply bg-secondary text-primary antialiased;
+    cursor: none; /* Custom cursor */
+  }
+
+  ::selection {
+    @apply bg-accent-gold text-white;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+  }
+  
+  .dark .glassmorphism {
+    @apply bg-black/20 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-gold/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-gold;
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
