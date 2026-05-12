@@ -9,12 +9,12 @@ import MagneticButton from "./MagneticButton";
 const categories = ["All", "Living Room", "Bedroom", "Modular Kitchen", "Commercial"];
 
 const projects = [
-  { id: 1, title: "Modern Living Space", category: "Living Room", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000&auto=format&fit=crop", height: "md:col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto" },
-  { id: 2, title: "Premium Interiors", category: "Bedroom", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop", height: "col-span-1 row-span-1 aspect-[4/5]" },
-  { id: 3, title: "Opulent Culinary Space", category: "Modular Kitchen", img: "https://images.unsplash.com/photo-1556910103-1c02745a872f?q=80&w=1000&auto=format&fit=crop", height: "col-span-1 row-span-2 aspect-[3/4]" },
-  { id: 4, title: "Elegant Detailing", category: "Commercial", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop", height: "col-span-1 row-span-1 aspect-square" },
-  { id: 5, title: "Urban Living", category: "Living Room", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop", height: "col-span-1 row-span-1 aspect-[4/5]" },
-  { id: 6, title: "Serene Finishes", category: "Bedroom", img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1000&auto=format&fit=crop", height: "md:col-span-2 row-span-1 aspect-[21/9]" },
+  { id: 1, title: "Modern Living Space", category: "Living Room", img: "https://lh5.googleusercontent.com/p/AF1QipN0fy15M_Y5A9ahhhpJs7r4wKpVROcfbb9UTvhB=w1000-h1000-n-k-no", height: "md:col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto" },
+  { id: 2, title: "Premium Interiors", category: "Bedroom", img: "https://lh5.googleusercontent.com/p/AF1QipMeK_L99vGMGkSx4y6bBNMtZbQufPO878UIDkzI=w1000-h1000-n-k-no", height: "col-span-1 row-span-1 aspect-[4/5]" },
+  { id: 3, title: "Opulent Culinary Space", category: "Modular Kitchen", img: "https://lh5.googleusercontent.com/p/AF1QipOSt1_ZKlrHqeM_omWR9k5QAom3jZiE6h6tZah7=w1000-h1000-n-k-no", height: "col-span-1 row-span-2 aspect-[3/4]" },
+  { id: 4, title: "Elegant Detailing", category: "Commercial", img: "https://lh5.googleusercontent.com/p/AF1QipOiM9_XuIbLkmL7gRmgwNtzK5h84U1-MTV0fyxq=w1000-h1000-n-k-no", height: "col-span-1 row-span-1 aspect-square" },
+  { id: 5, title: "Urban Living", category: "Living Room", img: "https://lh5.googleusercontent.com/p/AF1QipMCnW7L96VzaW2fBxe2RdT45PDK35Aq1b9Ziv8j=w1000-h1000-n-k-no", height: "col-span-1 row-span-1 aspect-[4/5]" },
+  { id: 6, title: "Serene Finishes", category: "Bedroom", img: "https://lh5.googleusercontent.com/p/AF1QipNqXiuW2i-Yd_IL53-5I_0GzCPV2u2F76Lb8rnJ=w1000-h1000-n-k-no", height: "md:col-span-2 row-span-1 aspect-[21/9]" },
 ];
 
 export default function ProjectShowcase() {
