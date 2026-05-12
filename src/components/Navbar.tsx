@@ -31,8 +31,10 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-accent-gold shadow-lg text-white ${
-          scrolled ? "py-3" : "py-5"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white ${
+          scrolled 
+            ? "py-3 bg-accent-gold/60 backdrop-blur-md shadow-lg border-b border-white/10" 
+            : "py-5 bg-accent-gold/30 backdrop-blur-sm"
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -53,7 +55,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="px-5 py-2 border border-transparent rounded-full text-sm uppercase tracking-widest hover:border-white transition-all duration-300"
+                className="px-5 py-2 border border-transparent rounded-full text-sm uppercase tracking-widest hover:border-white/50 transition-all duration-300 drop-shadow-md"
               >
                 {link.name}
               </Link>
@@ -61,7 +63,7 @@ export default function Navbar() {
             <div className="flex gap-4">
               <Link
                 href="#contact"
-                className="px-6 py-2 border border-white text-white hover:bg-white hover:text-accent-gold transition-all duration-300 rounded-full text-sm uppercase tracking-widest font-semibold"
+                className="px-6 py-2 border border-white/80 text-white hover:bg-white hover:text-accent-gold transition-all duration-300 rounded-full text-sm uppercase tracking-widest font-semibold drop-shadow-md"
               >
                 Consult Now
               </Link>
@@ -70,7 +72,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white drop-shadow-md"
             onClick={() => setMobileMenuOpen(true)}
           >
             <Menu size={28} />
@@ -86,7 +88,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween", duration: 0.4 }}
-            className="fixed inset-0 z-[100] bg-accent-gold/95 backdrop-blur-xl flex flex-col justify-center items-center text-white"
+            className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-xl flex flex-col justify-center items-center text-white"
           >
             <button
               className="absolute top-6 right-6 text-white hover:scale-110 transition-transform"
@@ -105,7 +107,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="text-3xl font-serif tracking-widest hover:text-white/70 transition-colors"
+                    className="text-3xl font-serif tracking-widest hover:text-accent-gold transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
