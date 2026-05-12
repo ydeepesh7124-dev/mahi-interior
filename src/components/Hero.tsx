@@ -114,7 +114,7 @@ export default function Hero() {
             </span>
           </MagneticButton>
           
-          <MagneticButton as="a" href="#portfolio" className="group flex items-center justify-center px-8 py-4 glassmorphism text-white uppercase tracking-widest text-xs font-bold hover:bg-white/20 transition-all">
+          <MagneticButton as="a" href="#projects" className="group flex items-center justify-center px-8 py-4 glassmorphism text-white uppercase tracking-widest text-xs font-bold hover:bg-white/20 transition-all">
             Explore Portfolio
           </MagneticButton>
         </motion.div>
